@@ -8,7 +8,6 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: #454545;
 }
 
 .header {
@@ -19,8 +18,6 @@ html, body {
     justify-content: space-between;
     background-color: rgba(250, 250, 250, 0);
     align-items: center;
-    margin: 0 auto;
-    padding: 0 2%;
     position: absolute;
     z-index: 999;
 }
@@ -43,8 +40,6 @@ html, body {
 
 header {
     width: 100%;
-    position: relative;
-    margin: 0;
     height: 100vh;
 }
 
@@ -61,7 +56,7 @@ header img {
     padding: 70px 0;
     display: flex;
     justify-content: space-around;
-    position: relative;
+    align-items: center;
 }
 
 .wrapper {
@@ -75,7 +70,6 @@ header img {
 
 .wrapper img {
     width: 24vw;
-    
     border: 8px solid #6f6f6f;
 }
 
@@ -158,16 +152,12 @@ footer {
     background-color: #454545;
     height: auto;    
     position: relative;
-    }
-
-    .header {
-        justify-content: center;
+    justify-content: center;
     }
 
     .header h1 {
         font-size: 20px;
         color: #fefefe;
-        text-align: center;
     }
 
     .header p {
@@ -175,7 +165,6 @@ footer {
         color: #ffffff;
         margin-bottom: 10px;
         width: 60vw;
-        text-align: center;
     }
 
     header {
@@ -183,12 +172,10 @@ footer {
     }
 
     header img {
-        width: 100%;
-        height: auto;
+    height: 100%;
     }
 
     .section2 {
-        padding: 20px;
         flex-direction: column;
         justify-content: center;  
     }
@@ -244,14 +231,18 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    header { 
-        height: auto; 
-    }
+@media (max-width: 600px) {
+    header {
+        height: 50vh;
+      }
 
     .container-img img {
         width: 200px;
         height: 200px;
         border: 10px solid #343434;   
     }
+
+   
+    
+   
 }
